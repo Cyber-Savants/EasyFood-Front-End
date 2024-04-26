@@ -161,5 +161,23 @@
       ],
       "restaurantId": 3
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name" : "Eduardo",
+      "lastname" : "Chero Emé",
+      "email": "ednoru36598@gmail.com",
+      "phone": "998868345",
+      "urlToImage": "https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg"
+    },
+    {
+      "id": 2,
+      "name" : "Jorge",
+      "lastname" : "Perez",
+      "email": "jorpez@gmail.com",
+      "phone": "948368815",
+      "urlToImage": "https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg"
+    }
   ]
 }
