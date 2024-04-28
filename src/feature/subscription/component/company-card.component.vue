@@ -21,7 +21,6 @@ export default {
         <div class="p-mr-2">
           <img :src="company.urlToImage" alt="Company Logo" class="company-logo">
         </div>
-
         <div>
           <h5>{{ company.name }}</h5>
           <p>{{ company.description }}</p>

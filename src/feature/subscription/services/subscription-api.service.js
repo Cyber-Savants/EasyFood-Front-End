@@ -10,4 +10,5 @@ export  class SubscriptionApiService{
     getSubscription(){
         return http.get('/subscription-form');
     }
+
 }

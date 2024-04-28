@@ -8,6 +8,7 @@ export default {
       type: Subscription,
       required: true
     }
+
   },
   methods: {
     submitForm() {

@@ -4,5 +4,6 @@ export class PlansCard{
         this.name = name;
         this.description = description;
         this.urlToImage = urlToImage;
+
     }
 }

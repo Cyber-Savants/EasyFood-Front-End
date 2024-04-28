@@ -1,7 +1,7 @@
 <script>
 import CompanyCardComponent from "../component/company-card.component.vue";
 import {SubscriptionApiService} from "../services/subscription-api.service.js";
-import {PlansCard} from "../model/plans-card.entity.js";
+//import {PlansCard} from "../model/plans-card.entity.js";
 
 export default {
   name: "subscription-selection",
