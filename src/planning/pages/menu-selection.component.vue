@@ -90,8 +90,6 @@ export default {
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
-
 .carta{
   background-color: #E2E2E2;
   padding:50px;
@@ -101,7 +99,6 @@ export default {
 }
 
 .text-tipografy{
-  font-family: "Keania One", sans-serif;
   font-weight:400;
   font-size: 40px;
   font-style: normal;
@@ -115,10 +112,8 @@ export default {
 
 .container-carta{
   width:100%;
-  heigth:100%;
   background-color: #D3F2CE;
   margin:0;
-  pading:50px;
 }
 
 </style>
