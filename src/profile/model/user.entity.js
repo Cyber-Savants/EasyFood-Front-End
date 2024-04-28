@@ -1,6 +1,5 @@
 export class User{
-    constructor(id, name, lastname, email, phone, urlToImage){
-        this.id = id;
+    constructor(name, lastname, email, phone, urlToImage){
         this.name = name;
         this.lastname = lastname;
         this.email = email;
