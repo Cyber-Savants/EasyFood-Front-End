@@ -6,6 +6,7 @@ import MakeOrderComponent from "../execution/pages/make-order.component.vue";
 
 import CompanyCardComponent from "../feature/subscription/component/company-card.component.vue";
 import SubscriptionFormComponent from "../feature/subscription/component/subscription-form.component.vue";
+import homeContentComponent from "../public/components/home-content.component.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -16,6 +17,7 @@ const router = createRouter({
         { path: '/company-card', component: CompanyCardComponent },
         { path:'/orders',component:MakeOrderComponent},
         {path: '/profile', component: userProfileComponent},
+        { path: '/home', component: homeContentComponent},
         { path: '/',        redirect: '/home'}
     ]
 });
