@@ -162,6 +162,15 @@
       "restaurantId": 3
     }
   ],
+  "user": [
+    {
+      "name" : "Eduardo",
+      "lastname" : "Chero Emé",
+      "email": "ednoru36598@gmail.com",
+      "phone": "998868345",
+      "urlToImage": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    }
+  ],
   "empresas": [
     {
       "id": 1,
