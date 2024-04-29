@@ -14,7 +14,7 @@ import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 
 // Add PrimeFlex for app
-import  'primeflex/primeflex.css'
+import 'primeflex/primeflex.css';
 
 // Add UI Components for application
 import Button       from "primevue/button";
@@ -25,17 +25,14 @@ import Avatar       from "primevue/avatar";
 import Menu         from "primevue/menu";
 import Menubar      from "primevue/menubar";
 import Toolbar      from "primevue/toolbar";
-import TreeSelect from "primevue/treeselect";
-
 import router from "./router/index.js";
-
 
 
 
 const app = createApp(App);
 
 // Add configuration for PrimeVue Plugin and components
-app.use(PrimeVue, {ripple: true})
+app.use(PrimeVue, { ripple: true })
     .component('pv-button', Button)
     .component('pv-card', Card)
     .component('pv-select-button', SelectButton)
@@ -44,8 +41,7 @@ app.use(PrimeVue, {ripple: true})
     .component('pv-menu', Menu)
     .component('pv-menubar', Menubar)
     .component('pv-toolbar', Toolbar)
-    .component('pv-tree-select', TreeSelect)
-    .use(router)
+    .use(router);
 
 // Add i18n configuration
 app.use(i18n);

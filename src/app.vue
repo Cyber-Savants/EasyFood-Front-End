@@ -1,13 +1,14 @@
 <script>
+import FooterContent from './public/components/footer-content.component.vue'
 
 export default {
-  components: {},
+  name: 'app',
+  components: {FooterContent},
   data(){
-    return {
-     items:[
-       { label: 'Restaurants',to:'/restaurants'},
-       { label: 'Menus',to:'/menus'},
-     ]
+    return{
+      items:[
+          {label: 'Mi Perfil', to: '/profile'},
+      ]
     }
   }
 }
@@ -17,11 +18,5 @@ export default {
   <main>
     <router-view></router-view>
   </main>
+  <footer-content/>
 </template>
-
-<style scoped>
-
-.body{
-  padding: 100px;
-}
-</style>
