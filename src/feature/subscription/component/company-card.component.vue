@@ -19,11 +19,11 @@ export default {
     <div style="display: flex; flex-direction: row; justify-content: space-around;">
       <div class="p-d-flex p-jc-center p-ai-center">
         <div class="p-mr-2">
-          <img :src="company.urlToImage" alt="Company Logo" class="company-logo">
+          <img v-if="company" :src="company.urlToImage" alt="Company Logo" class="company-logo">
         </div>
         <div>
-          <h5>{{ company.name }}</h5>
-          <p>{{ company.description }}</p>
+          <h5 v-if="company">{{ company.name }}</h5>
+          <p v-if="company" >{{ company.description }}</p>
         </div>
       </div>
     </div>

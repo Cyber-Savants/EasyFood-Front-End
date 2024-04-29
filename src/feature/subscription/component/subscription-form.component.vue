@@ -1,5 +1,6 @@
 <script>
-export {Subscription} from"src/feature/subscription/model/subscription.entity.js"
+
+import {Subscription} from "../model/subscription.entity.js";
 
 export default {
   name: "subscription-form",
