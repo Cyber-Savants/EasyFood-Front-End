@@ -16,6 +16,7 @@ export default {
 </script>
 
 <template>
+  <toobal-content></toobal-content>
   <main>
     <router-view></router-view>
   </main>
