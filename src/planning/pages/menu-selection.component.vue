@@ -4,6 +4,7 @@ import {PlanningApiService} from "../services/planning-api.service.js";
 import  {Menu} from "../model/menu.entity.js";
 import ItemCard from "../components/item-card.component.vue";
 
+
 export default {
   name: "menu-selection",
   components:{ ItemCard},
@@ -61,6 +62,7 @@ export default {
 </script>
 
 <template>
+
   <div class="container-carta">
     <h1 class="m-5 p-2 text-tipografy">Carta de {{nameRestaurant}}</h1>
     <div class="carta">

@@ -4,6 +4,7 @@ import {PlanningApiService} from "../services/planning-api.service.js";
 import {Restaurant} from "../model/restaurant.entity.js";
 
 
+
 export default {
   name: "restaurant-selection",
   components:{ RestaurantList},

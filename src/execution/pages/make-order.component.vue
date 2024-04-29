@@ -3,9 +3,10 @@ import OrderCard from "../components/order-card.component.vue";
 import {ExecutionApiService} from "../services/execution-api.service.js";
 import {Order} from "../model/order.entity.js";
 
+
 export default {
   name: "make-order",
-  components:{OrderCard},
+  components:{ OrderCard},
   data(){
     return {
       order:Order,

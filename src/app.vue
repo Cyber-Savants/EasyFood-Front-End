@@ -1,7 +1,9 @@
 <script>
 
+import ToobalContent from "./public/components/toobal-content.component.vue";
+
 export default {
-  components: {},
+  components: {ToobalContent},
   data(){
     return {
      items:[
@@ -14,6 +16,7 @@ export default {
 </script>
 
 <template>
+  <toobal-content></toobal-content>
   <main>
     <router-view></router-view>
   </main>
@@ -21,7 +24,4 @@ export default {
 
 <style scoped>
 
-.body{
-  padding: 100px;
-}
 </style>
