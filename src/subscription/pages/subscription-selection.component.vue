@@ -3,12 +3,14 @@
 </template>
 
 <script>
-import SubscriptionFormComponent from "../components/subscription-form.component.vue";
+
+import SubscriptionForm from "../components/subscription-form.component.vue";
 
 export default {
   name: "subscription-selection",
   components: {
-    SubscriptionFormComponent
+    SubscriptionForm
+
   }
 }
 </script>

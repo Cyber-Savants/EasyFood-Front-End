@@ -21,8 +21,9 @@
 </template>
 
 <script>
-import { Subscription } from "../model/subscription.entity.js";
+
 import { SubscriptionApiService } from "../services/subscription-api.service.js";
+import {Subscription} from "../model/subscripton.entity.js";
 
 export default {
   name: "subscription-form",
