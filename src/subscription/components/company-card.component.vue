@@ -4,16 +4,13 @@ export default {
   props: {
     company: Object,
   },
-  methods:{
-    buy(){
-
-      this.$router.push('./subscription-form');
-
+  methods: {
+    buy() {
+      this.$route.push(`./subscription-selection/${this.company.id}`);
     },
   },
 };
 </script>
-
 <template>
   <div class="p-card">
     <div style="display: flex; flex-direction: row; justify-content: space-around;">
@@ -23,14 +20,13 @@ export default {
         </div>
         <div>
           <h5 v-if="company">{{ company.name }}</h5>
-          <p v-if="company" >{{ company.description }}</p>
+          <p v-if="company">{{ company.description }}</p>
         </div>
       </div>
     </div>
     <button class="p-button-success" @click="buy">Comprar</button>
   </div>
 </template>
-
 <style scoped>
 .p-card {
   width: 300px;
@@ -39,10 +35,12 @@ export default {
   background-color: #D3F2CE;
   padding: 1rem;
 }
-.p-button-success{
+
+.p-button-success {
   background-color: #ffffff;
   border: 1px solid #000000;
 }
+
 .company-logo {
   width: 90px;
   height: 90px;
