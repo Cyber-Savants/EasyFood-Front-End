@@ -15,7 +15,7 @@ export default {
       <p><i class="pi pi-phone"/>{{ 'authoring-phrase.phone' }}</p>
       <p>Copyright &copy; 2024. Cyber Savants</p>
     </div>
-    <div class="flex align-items-center justify-content-center">
+    <div class="flex align-items-center justify-content-center mt-2">
       <i class="pi pi-facebook" style="font-size: 2.5rem"></i>
       <i class="pi pi-instagram" style="font-size: 2.5rem"></i>
     </div>
@@ -25,7 +25,6 @@ export default {
 <style scoped>
 .footer-container {
   width: 100%;
-  max-width: 1200px;
   margin: auto;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
