@@ -3,6 +3,7 @@
 import {PlanningApiService} from "../services/planning-api.service.js";
 import  {Menu} from "../model/menu.entity.js";
 import ItemCard from "../components/item-card.component.vue";
+import CreateDish from '../components/create-dish.component.vue';
 
 
 export default {
