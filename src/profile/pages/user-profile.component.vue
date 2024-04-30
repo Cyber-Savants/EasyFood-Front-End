@@ -24,6 +24,7 @@ export default {
           user.lastname,
           user.email,
           user.phone,
+          user.address,
           user.urlToImage
       )
     },
@@ -33,7 +34,7 @@ export default {
           .then(response =>{
             let user = response.data;
             this.user = this.buildUserFromResponsiveData(user);
-            console.log(user);
+            console.log(response.data);
           })
           .catch(error => {
             this.errors.push(error);
@@ -58,7 +59,7 @@ export default {
         <pv-button class="custom-button" label="Ayuda"/>
       </div>
     </div>
-    <user-data-card user="user" />
+    <user-data-card :user="user"/>
   </div>
 </template>
 

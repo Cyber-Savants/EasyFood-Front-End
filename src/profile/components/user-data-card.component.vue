@@ -19,7 +19,7 @@ export default {
       <p class="m-5">
         <span class="font-bold">Nombre:</span>
         <p>{{user.name}}</p>
-        <span class="font-bold bg-white">Apellido:</span>
+        <span class="font-bold">Apellido:</span>
         <p>{{user.lastname}}</p>
         <span class="font-bold">Email:</span>
         <p>{{user.email}}</p>
