@@ -1,4 +1,4 @@
-export class Subscription{
+export class Subscription {
     constructor(id, name, surname, email, dni, card, cvv, time) {
         this.id = id;
         this.name = name;
@@ -8,6 +8,5 @@ export class Subscription{
         this.card = card;
         this.cvv = cvv;
         this.time = time;
-
     }
 }
