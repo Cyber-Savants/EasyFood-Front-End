@@ -1,7 +1,8 @@
 <script>
-import {User} from "../model/user.entity.js";
+
 import UserDataCard from "../components/user-data-card.component.vue";
 import {UsersApiService} from "../services/users-api.service.js";
+import {User} from "../model/user.entity.js";
 
 export default {
   name: "user-profile",
@@ -23,7 +24,6 @@ export default {
           user.lastname,
           user.email,
           user.phone,
-          user.address,
           user.urlToImage
       )
     },
@@ -33,7 +33,7 @@ export default {
           .then(response =>{
             let user = response.data;
             this.user = this.buildUserFromResponsiveData(user);
-            console.log(response.data);
+            console.log(user);
           })
           .catch(error => {
             this.errors.push(error);
@@ -58,7 +58,7 @@ export default {
         <pv-button class="custom-button" label="Ayuda"/>
       </div>
     </div>
-    <UserDataCard :user="user"></UserDataCard>
+    <user-data-card user="user" />
   </div>
 </template>
 
