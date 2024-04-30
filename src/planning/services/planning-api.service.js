@@ -11,4 +11,7 @@ export  class PlanningApiService {
     getMenusByRestaurantId(id){
         return http.get(`/restaurants/${id}/?_embed=menus`);
     }
+    async createDish(restaurantId, dishData) {
+        return http.post(`/restaurants/${restaurantId}/menus`, dishData);
+    }
 }
