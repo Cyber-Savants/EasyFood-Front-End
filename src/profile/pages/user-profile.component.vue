@@ -45,14 +45,14 @@ export default {
 </script>
 
 <template>
-  <div class="profile-container">
-    <div class="flex mt-5 flex-column align-items-center">
+  <div class="profile-container flex justify-content-center">
+    <div class="flex flex-column align-items-center mt-5 md:m-5">
       <div>
         <img v-if="user" :src="user.urlToImage" :alt="user.name">
         <p>{{ user.name }} {{user.lastname}}</p>
       </div>
-      <div class="button-container">
-        <pv-button class="custom-button" label="Mis Datos"/>
+      <div class="flex flex-row md:flex-column md:justify-content-between row-gap-3 mt-4">
+        <pv-button class="custom-button" label="Mis Datos" />
         <pv-button class="custom-button" label="Direcciones"/>
         <pv-button class="custom-button" label="Historial de Pedidos"/>
         <pv-button class="custom-button" label="Ayuda"/>
@@ -64,9 +64,8 @@ export default {
 
 <style scoped>
 .profile-container {
-  display: flex;
   background-color: #d2f0cd;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 img {
@@ -88,12 +87,5 @@ img {
 }
 
 
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem;
-  gap: 1rem;
-}
+
 </style>

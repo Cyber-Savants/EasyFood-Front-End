@@ -16,10 +16,10 @@ export default {
   <pv-card class="mt-5 md:m-5" style="width: 50%; background-color: #97E896 ;overflow: hidden">
     <template #title>Mis Datos</template>
     <template #content>
-      <p class="m-0">
+      <p class="m-5">
         <span class="font-bold">Nombre:</span>
         <p>{{user.name}}</p>
-        <span class="font-bold">Apellido:</span>
+        <span class="font-bold bg-white">Apellido:</span>
         <p>{{user.lastname}}</p>
         <span class="font-bold">Email:</span>
         <p>{{user.email}}</p>
@@ -28,8 +28,8 @@ export default {
       </p>
     </template>
     <template #footer>
-      <div class="flex gap-3 mt-1">
-        <pv-button label="Editar" style="background-color: white; color: black" />
+      <div class="flex justify-content-center mt-1">
+        <pv-button label="Actualizar Datos" style="background-color: white; color: black" />
       </div>
     </template>
   </pv-card>
