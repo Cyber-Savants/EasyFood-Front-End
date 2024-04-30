@@ -1,12 +1,13 @@
 <script>
 import { ref } from 'vue';
 import { PlanningApiService } from '../services/planning-api.service.js';
-import CreateDish from 'src/planning/components/create-dish.component.vue'
-import ItemCard from '/src/planning/components/item-card.component.vue';
+import CreateDish from "../components/create-dish.component.vue";
+import ItemCard from "../components/item-card.component.vue";
+
 
 export default {
   name: 'AddDishPage',
-  components: { CreateDish, ItemCard },
+  components: {ItemCard, CreateDish},
   props: {
     restaurantId: {
       type: Number,
